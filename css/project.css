@@ -1,0 +1,58 @@
+.project {
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
+
+
+
+.project-card {
+  box-sizing: border-box;
+  border: 1px solid;
+  background-color:  #422424;
+  color: white;
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 16px;
+
+}
+
+ img{
+  width: 100%;
+  border-radius: 20px;
+  
+}
+
+h3{
+  font-size: .9rem;
+  line-height: 1.4rem;
+}
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+  .project-description {
+    display: flex;
+    margin: 10px;
+
+  }
+  .project:nth-child(odd) .project-card {
+    order: 2;
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+  }
+}

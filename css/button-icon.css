@@ -1,0 +1,18 @@
+.button-icon {
+  padding: 10px;
+  border-radius: 4px;
+  background: white;
+  text-decoration: none;
+  display: inline-block;
+}
+.button-icon:hover{
+   background-color: rgb(32, 218, 72);
+   padding: 10px;
+   transition: all 0 ,25 ease;
+   -webkit-transform: scale(1.3);transform: scale(1.3);;
+   overflow: hidden;
+}
+
+.button-icon img {
+  vertical-align: middle;
+}

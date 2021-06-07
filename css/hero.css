@@ -1,0 +1,116 @@
+.hero  {
+  padding-block-start: 16px;
+  background: url("https://us.123rf.com/450wm/addricky/addricky1309/addricky130900825/22212535-computer-mobility-laptop-with-color-application-icons-high-resolution-3d-render.jpg?ver=6") no-repeat center center;
+  border-radius: 10px;
+  width: 100%vh;
+  height: 300px;
+}
+
+.hero .hero-image {
+  display: none;
+}
+
+.hero-description {
+  display: inline-block;
+  flex-direction: column;
+  width: 100%;
+  height:60px;
+  color:black;
+}
+
+.hero-description h1 span {
+  font-size: 16px;
+}
+
+.hero-image:hover{
+text-align: right;
+
+}
+
+.hero-image img {
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: 100%;
+  width:  8rem !important;
+  height: 8rem !important;
+  margin: 20px;
+}
+
+.hero-image-md img {
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: 100%;
+  width: 50%;
+  height: 50%;
+  margin: 2rem;
+}
+
+
+.hero h1 {
+  margin: 20px;
+}
+/* .hero h1 span:nth-of-type(1) { */
+.hero h1 span:first-child {
+  font: var(--headline5);
+  display: block;
+  margin: 20px
+}
+ #main .sub-title{
+   margin: 20px;
+   font-size: 25px;
+
+ }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    gap: 32px;
+    padding-block-start: 16px;
+    background-image: url("https://www.adeccoinstitute.es/wp-content/uploads/2019/10/iStock-1051617224-1200x600.jpg");
+    width: 100%vh;
+    height: 600px;
+  }
+
+  .hero-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height:120px;
+    color:white;
+  }
+
+  .hero .hero-image {
+    display: block;
+  }
+
+  .hero-image-md {
+    display: none;
+  }
+
+  .hero h1 {
+    font: var(--headline2);
+    margin: 20px;
+  }
+}
+
+    
+  .hero-description {
+    order: 1;
+    max-inline-size: 450px;
+  }
+  .hero-image {
+    order: 2;
+    text-align: end;
+    flex: 1;
+  }
+
+
+
+@media screen and (min-width: 1024px) {
+  .hero-image img {
+    inline-size: 100px;
+    block-size: 120px;
+    margin: 10px, 10px;
+  }
+}
