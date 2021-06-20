@@ -83,7 +83,12 @@ nav{
   align-items: center;
   display: flex;
 }
-
+#menu{
+  display: none;
+}
+.toggle label {
+  display: none;
+}
 ul{
   list-style:none;
 }
@@ -144,9 +149,6 @@ margin-right: 25px;
 	font-size: 2rem;
   color:#000000;
  margin-bottom: 1.6rem;	
-}
-.b-container{
-
 }
 .s-box{
   display: block;
@@ -469,7 +471,7 @@ margin-right: 25px;
 #contact-form .form-control{
   width: 40%;
   height: 2rem;
-  margin: 10px;
+  margin: 10px !important;
   border-radius: 5px;
   border: none;
 }
@@ -500,14 +502,69 @@ textarea{
 	#main{
 		background-size: 1024px !important;
 		
-	}
-	.name{
-		left: 10%;
-		top: 50%;
-		transform: translate(-10%,-50%);
-	}
-	.about-model img{
-    width: 50%;
+  }
+  .menu{
+    display:none;
+  }
+  ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+  
+  .toggle input {
+    display: none;
+  }
+  
+  .toggle label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  label:hover{
+    background: grey;
+  }
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  input:checked ~ label {
+    background: lightgrey; 
+  }
+  
+  ul{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+  
+  }
+  
+  
+  li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  li:hover {
+    filter: brightness(110%);
+  }
+
+	.abaout-model img{
+    width:450px;
   }
   .abaout-text{
     font-size: 1rem;
@@ -534,15 +591,71 @@ textarea{
 
 @media screen and (max-width:900px){
 
- nav ul li a:hover{
-	background-color: white;
- }
-.abaout-model img{
-  width: 50%;
+ 
+
+ ul{
+  display: none;
+}
+
+input:checked  ~ ul{
+  display:block;
+}
+
+.toggle input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+label:hover{
+  background: grey;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+input:checked ~ label {
+  background: lightgrey; 
+}
+
+ul{
+  margin-top:0;
+  padding: 0;
+  width: 200px;
+
+}
+
+
+li {
+  display: block;
+  background: lightgrey;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+  filter: brightness(110%);
+}
+.abaout-model{
+  display: none;
 }
 .abaout-text{
   font-size: 1rem;
-  width: 75%
+  width: 90%;
+  text-align: center;
 }
 .b-container{
   margin-bottom: 40px;
@@ -552,7 +665,7 @@ textarea{
   width: 300px;
   height: 400px;
 }
-#about{
+#abaout{
   justify-content: center;
   padding-top: 0px;
 }
@@ -611,8 +724,9 @@ textarea{
 		padding: 10px;
 		box-sizing: border-box;
 		height: 40px;
-		
-	}
+    
+  }
+  
 	textarea{
 		background-color: #262626 !important;
 		margin: 10px 0px;
@@ -646,35 +760,26 @@ textarea{
   width: 100%;
   text-align: center;
 }
+.abaout-text button{
+  margin-bottom: 2rem;
+}
 
- .abaout-model{
+ .abaout-model img{
    display: none;
  }
- nav{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left:-300px; /* Escondemos nuestro menú con un valor negativo */ 
-	width: 300px;
-	z-index: 1;
-	padding: 90px 30px 30px;
-	background: #68C5DB;
-	opacity: 0;
-	transition: all 0.75s ease;
-	font-size: 1.2em;
-	overflow-y: auto;
+.p-container{
+  grid-gap: 10px;
+  margin:auto;
+  display: inline-block;
 }
-nav a{
-	display:block;
-	text-decoration: none;
-	padding: 10px;
-	color: rgba(255,255,255,0.75);
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-	transition: all ease 0.25s;
+.p-heading{
+  margin-bottom: 1rem;
 }
- 
-nav a:hover{
-	color: rgba(255,255,255,1);
-	border-bottom-color:rgba(255,255,255,0.4);
+.p-box{
+  margin: 2rem;
+}
+.c-b-heading{
+  font-size: 1.4rem;
+  text-align: center;
 }
 }
