@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content ="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1,0">
   <title>Portafolio | ubaldo</title>
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> -->
@@ -13,170 +13,194 @@
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <div id="particles-js"></div>
-  <!--menu amburguesa-->
-  <nav class="nav">
-    <input type="checkbox" id="menu">
-    <label for="menu"> ☰ </label>
-    <ul>
-      <li>
-        <a class="is-active" href="#main">inicio</a>
-      </li>
-      <li>
-        <a href="#project">Proyectos</a>
-      </li>
-      <li>
-        <a href="#contact">contactame</a>
-      </li>
-    </ul>
-  </nav>
-
-  <header class="header">
-    <div class="wrapper">
-      <!--menu normal-->
-      <div class="header-content">    
-         <nav class="menu" aria-label="main-navigation">
-          <ul>
-            <li>
-              <a class="is-active" href="#main">inicio</a>
-            </li>
-            <li>
-              <a href="#project">Proyectos</a>
-            </li>
-            <li>
-              <a href="#contact">contactame</a>
-            </li>
+    <!--principal-->
+    <section id="main">
+      <!--navegacion-->
+      <nav>
+        <!--logo-->
+        <a href="#" class="logo">u</a>
+        <!--menu-->
+        <div class="toggle">
+          <ul class="menu">
+            <li class="active"><a href="#main">inicio</a></li>
+            <li><a href="#abaout">Sobre mi</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contact-form">contactame</a></li>
           </ul>
-        </nav>
-      </div>
-    </div>
-  </header><br><br><br>
-
-  <!--inicio de presecentacion  de bienvenida-->
-  <div class="wrapper container">
-    <section aria-label="main" class="hero" id="main">
-      <div class="hero-image">
-        <img src="images/perfil.jpg">
-      </div>
-      <div class="hero-description">
-        <h1>
-          <span>¡HOLA A TODOS !</span>
-          <span>ME LLAMO UBALDO </span>
-        </h1>
-        <p class="sub-title">
-          Desarrollador web full stack que le encanta implementar diseños que inspiran y atraen a las personas.
-        </p>
-      </div>
-    </section>
-    <!--conociendome un poco-->
-    <div class="hero-image-md">
-      <img src="images/perfil.jpg">
-    </div>
-
-    <div class="sobre-mi" id="sobre-mi"> 
-      <span>sobre mi</span>
-      <p> Soy desarrollador web full stack  tengo 29 años y  vivo en la ciudad de medellin desde hace unos años 
-        me caracterizo por ser una persona alegre  sencilla y sobre todo que le gustan los retos, soy una persona responsable y
-        respetuosa  mis sueños es crear  mi propia empresa de desarrollo de tegnologia, me gusta aprovechar el tiempo al maximo
-        en mis tiempos libres me dedico a  proyectos personales  y a aprender nuevas tegnologias que me puedan ayudar en mi
-         desempeño como profesional tambien comparto  con mi familia  y amigos en  eltiempo libre  me  gusta ver  television, 
-         escuchar musica,  jugar etc  estas  son unas cuantas cosas de  lo que me gusta hacer 
-      </p>
-    </div><br><br><br>
-   
-    <!--card sobre javascript  el  link te lleva a una pagina que tiene mucha informacion de javascript-->
-    <div class="project" id="project">
-      <div class="project-card">
-          <img src="https://p.kindpng.com/picc/s/171-1718046_javascript-programming-language-logo-hd-png-download.png" alt="imagen de javascript">
-              <h3>Aprende javascript desde cero</h3>
-              <p>Publicado el: <span>4 de junio 2021</span></p>
-              <p>Por: <span>ubaldo cervantes</span></p>
-      </div>
-      <div class="project-description">
-        <a class="title" target="_blank" href="https://ubaldocervantes.com">ubaldocervantes.com</a>
-        <p>Aprende javascript desde cero para ampliar tus habilidades y oportunidades como programador </p>
-        <a target="_blank" href="https://github.com/cervantes2907" class="button is-secondary">Ver Código</a>
-        <a target="_blank" href="https://desarrolloweb.com/home/javascript" class="button">Ver Proyecto</a>
-      </div>
-    </div>
-
-    <!--esta parte  es una imagen con unos botones  que  llevan a paginas en blanco
-     meno el que dice  ver codigo ese lleva a  mi cuenta de github-->
-    <div class="project">
-      <div class="project-image">
-        <img src="https://image.isu.pub/170130160454-f2b09e87c4af6e8a923c5f40eb5aedab/jpg/page_1_thumb_large.jpg" alt="">
-      </div>
-      <div class="project-description">
-        <a class="title" target="_blank" href="https://ubaldocervantes.com">ubaldocervantes.com</a>
-        <a target="_blank" href="https://github.com/cervantes2907" class="button is-secondary">Ver Código</a>
-        <a target="_blank" href="https://ubaldocervantes.com" class="button">Ver Proyecto</a>
-      </div>
-    </div>
-
-     <!--este es igual que anterior  lo hice de esta manera por que ahora no tengo 
-    un proyecto como tal donde  pueda redirecccionar a medida que avance el curso lo hago-->
-    <div class="project">
-      <div class="project-image">
-        <img src="https://lh3.googleusercontent.com/proxy/zNgpNu3EaczkZArVk6JC39bjSrgYmfN9oPBnUKF18oHYeTHKyAg2K-3EaRdNnm5nSzf1-MTu1yNDWfdL83zPue04xAHczZ-RZk-HphLegMzZkVH6tVNBdlI" alt="">
-      </div>
-      <div class="project-description">
-        <a class="title" target="_blank" href="https://ubaldocervantes.com">ubaldocervantes.com</a>
-        <a target="_blank" href="https://github.com/cervantes2907" class="button is-secondary">Ver Código</a>
-        <a target="_blank" href="https://ubaldocervantes.com" class="button">Ver Proyecto</a>
-      </div>
-    </div>
-
-<!--este  es un formulario  para poder contactarse conmigo-->
-    <form action="" method="POST" class="form">
-      <div class="form-content">
-        <h2 class="title">Hablemos</h2>
-        <p>Si está interesado en trabajar conmigo en mi próximo proyecto,
-        no dude en ponerse en contacto conmigo.</p>
-        <label for="form-name">
-          Nombre Completo
-          <input required name="name" id="form-name" type="text" placeholder="francisco">
-        </label>
-        <label for="form-name">
-          Correo electrónico
-          <input required name="email" id="form-name" type="email" placeholder="francisco@hotmail.com">
-        </label>
-        <label for="form-name">
-          Mensaje
-          <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
-        </label>
-        <button class="button" type="submit">Enviar mensaje</button>
-      </div>
-    </form>
-
-<!--aqui se encuentra la seccion de mis redes sociales para  quien quiera contactarme
-y se encuentra el pie de  pagina -->
-    <footer class="footer" id="contact">
-      <div class="footer-content">
+          <!--idiomas-->
+          <a href="#" class="lang">Es</a>
+        </div>
+      </nav>
+        <!--flecha abajo-->
+        <div class="black line"></div>
+        <!--social-->
         <div class="social">
           <a class="button-icon" href="tel:3112840955" target="_blank"><img src="./icons/icon-phone.svg"></a>
           <a class="button-icon" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="./icons/icon-important_mail.svg"></a>
           <a class="button-icon" href="https://www.instagram.com/ubaldo2907/?hl=es-la" target="_blank"><img src="./icons/icon-instagram.svg"></a>
           <a class="button-icon" href="https://twitter.com/UbaldoCervante7" target="_blank"><img src="./icons/icon-twitter.svg"></a>
         </div>
-        <nav class="menu" aria-label="main-navigation">
-          <ul>
-            <li>
-             <a class="is-active" href="#main">inicio</a><br>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer-copyright"><br>
-          <p>
-            Hecho con el ❤️ por ubaldo cervantes.
-          </p>
-          <p>
-            Copyright 2021 - Todos los derechos reservados.
-          </p>
-        </div>
+    </section>
+     <!--sobre mi-->
+    <section id="abaout">
+      <div class="abaout-text">
+        <h1>Sobre mi</h1>
+        <h2>Desarrollador full stack</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Reiciendis fugit recusandae, eligendi veritatis eos 
+          laborum officiis sint nesciunt quo aperiam culpa odio
+          doloremque placeat beatae vel consequatur nobis 
+          facilis? Ipsam.</p>
+        <button>Ver mas</button>
       </div>
-    </footer>
-    <script src="./js/particles.min.js"></script><!--este es el fondo animado-->
-    <script src="./js/app.js"></script><!--fondo animado-->
-  </div>
+    <!--aserca del modelo-->
+      <div class="abaout-model">
+        <img src="https://sesitdigital.com/wp-content/uploads/2020/12/Imagen1.jpg" alt="model">
+      </div>
+    </section>
+    <!--servicios-->
+    <section id="services">
+     <!--heading-->
+      <div class="heading">
+        <h1>Servios</h1>
+        <p>Estos son algunos servicios que ofresco</p>
+     </div>
+     <div class="b-container">
+       <div class="s-box">
+           <div class="s-b-img">
+           <div class="s-type">Tecnologias que manejo</div>
+           <img src="https://i.pinimg.com/originals/38/e7/7f/38e77fbb9bd73df72fb35d3814272f70.jpg" alt="">
+           </div>
+           <div class="s-b-text">
+           <a href="#">Ofersco servicio de desarrollo y mantenimientos
+             utizando estas tecnologias 
+           </a>
+           </div>
+        </div>
+       <!--box-2-->
+       <div class="s-box">
+         <!--img-->
+         <div class="s-b-img">
+         <!--tipo-->
+         <div class="s-type">Web Desing</div>
+            <img src="https://ool.cgroup2memorable.pw/img/779528.jpg" alt="">
+         </div> 
+       <!--text--> 
+         <div class="s-b-text">
+         <a href="#">Ofresco sevicios de mantenimiento de paginas web
+         </a>
+       </div>
+       </div>
+       <!--box-3-->
+       <div class="s-box">
+         <!--img-->
+         <div class="s-b-img">
+          <!--type--> 
+          <div class="s-type">Back-end y front-end</div>
+          <img src="https://esdima.com/wp-content/uploads/2018/09/front-end-vs-back-end-300x240.jpg" alt="">
+         </div>
+         <!--text-->
+         <div class="s-b-text">
+           <a href="#">Ofrecemos servicios tanto en back-end como en front-end de manera eficiente</a>
+         </div>
+       </div>
+     </div>
+    </section>
+    <!--portafolio-->
+    <section id="portafolio">
+      <!--heading-->
+      <h1 class="p-heading">Portafolio</h1>
+      <!--portafolio container-->
+      <div class="p-container">
+        <!-- portafolio-box-->
+      <div class="p-box">
+        <!--text-->
+      <div class="overlay-text">
+        <h1>Responsive Desing</h1>
+        <p>Diseños para cualquier tipo de pantalla</p>
+      </div>
+      <!--bg-img-->
+      <img src="https://www.codetia.com/wp-content/uploads/2016/04/responsive-design1.jpg" alt="">
+      </div>  
+      <!--portafolio box 2-->
+      <div class="p-box">
+        <div class="overlay-text">
+          <h1>Apps Desing</h1>
+          <p>Unity</p>
+        </div>
+        <!--bg-img-->
+        <img src="https://image.freepik.com/vector-gratis/diseno-aplicaciones-moviles_24877-16596.jpg" alt="">
+      </div> 
+      <!--portafolio-box-3-->
+      <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+          <h1>Lavel Desing</h1>
+          <p>colocar algo aqui</p>
+        </div>
+        <!--bg-img-->
+        <img src="https://www.comercialweb.com.co/wp-content/uploads/2019/05/diseno_web.png" alt="">
+      </div>
+      <!--portafolio-box-4-->
+      <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+          <h1>Full Stack</h1>
+          <p>Web Desing</p>
+      </div>
+      <!--bg-img-->
+      <img src="https://www.plain.pe/wp-content/uploads/diseno-desarrollo-paginas-web-peru.png" alt="">
+      </div>
+      <!--portafolio-box-5-->
+      <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+          <h1>Full Stack</h1>
+          <p>Web Desing</p>
+      </div>
+      <!--bg-img-->
+      <img src="https://www.comunicare.es/wp-content/uploads/2021/03/8-herramientas-diseno-web-1.jpg" alt="">
+      </div>
+      <!--portafolio-box-6-->
+      <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+          <h1>Full Stack</h1>
+          <p>Web Desing</p>
+      </div>
+      <!--bg-img-->
+      <img src="https://www.paredro.com/wp-content/uploads/2018/10/PlanetaGrafico-7-1.jpg" alt="">
+      </div>
+      </div>
+    </section>
+    <!-- boton-contacto-->
+    <section id="contact-btn">
+    <!--heading-->
+    <h1 class="c-b-heading">Si quieres trabajar conmigo en tu proximo proyecto</h1>
+    <!--boton-->
+       <button>contactame</button>
+    </section>
+    <!--formulario-->
+    <section id="contact-form">
+      <form method="post" data-form-title="CONTACT US">
+        <input type="hidden" data-form-email="true">
+        <div class="form-data">
+          <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
+        </div>
+        <div class="form-data">
+          <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+        </div>
+        <div class="form-data">
+          <input type="tel" class="form-control" name="phone" placeholder="Phone" data-form-field="Phone">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+        </div>
+        <div class="enviar">
+          <button type="submit" class="btn btn-lg btn-danger">Enviar</button>
+        </div>
+      </form>
+    </section>  
 </body>
 </html>
