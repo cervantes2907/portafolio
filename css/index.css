@@ -83,12 +83,13 @@ nav{
   align-items: center;
   display: flex;
 }
-#menu{
+#desplegable-menu{
   display: none;
 }
 .toggle label {
   display: none;
 }
+
 ul{
   list-style:none;
 }
