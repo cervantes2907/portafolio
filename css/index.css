@@ -555,7 +555,7 @@ textarea{
   }
   .abaout-text{
     font-size: 1rem;
-    width: 50%
+    width: 100%
   }
 	#services{
 		height:auto;
@@ -655,7 +655,7 @@ li:hover {
 }
 .about-text{
   font-size: 1rem;
-  width: 50%
+  width: 100%
 }
 .abaout-text h1{
   width: 90%;
@@ -669,6 +669,12 @@ li:hover {
     grid-gap: 10px;
     margin: auto;
     display: inline-block;
+  }
+  #services{
+  padding: 2rem;
+  }
+  .heading{
+    margin-top:5rem;
   }
   .p-heading{
     margin-top: 3rem;
@@ -727,46 +733,4 @@ li:hover {
 	#contact-form form h1{
 		margin:5px 0px;
 	} 	
-}
-@media screen and (max-width:360px){
-	
- .abaout-text h1 {
-   width: 100%;
-   margin-top:8rem;
-   text-align: center;
-   font-size: 2rem;
- }
-
- .abaout-text h2 {
-  width: 100%;
-  margin-top:0.3rem;
-  text-align: center;
-}
-
-.abaout-text{
-  margin-top: 2rem;
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.p-container{
-  grid-gap: 10px;
-  margin:auto;
-  display: inline-block;
-}
-.p-heading{
-margin-top: 5rem;
-font-size: 2rem;
-}
-.p-heading h1{
-  font-size: 2rem;
-  }
-.p-box{
-  margin: 1rem;
-}
-.c-b-heading{
-  font-size: 1.4rem;
-  text-align: center;
-}
 }
